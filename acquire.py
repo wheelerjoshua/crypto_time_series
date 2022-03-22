@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-def acquire():
+def get_df():
     '''Reads csv's from cryptodatadownload's Gemini database and combines them into a dataframe'''
     btc = 'https://www.cryptodatadownload.com/cdd/Gemini_BTCUSD_day.csv'
     btc = pd.read_csv(btc, skiprows=[0])
